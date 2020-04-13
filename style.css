@@ -7,6 +7,7 @@
   --darkBlue: #01516e;
   --yellow: #f0ce15;
   --grey: #01516e;
+  --blue: #50c6db;
 }
 .topBar {
   width: 100%;
@@ -44,4 +45,9 @@ a {
 }
 #btnLearnMore:hover {
   color: black;
+}
+header {
+  height: 150px;
+  width: 100%;
+  background-color: var(--blue);
 }
