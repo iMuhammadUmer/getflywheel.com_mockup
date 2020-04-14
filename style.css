@@ -47,7 +47,68 @@ a {
   color: black;
 }
 header {
-  height: 150px;
+  height: 120px;
   width: 100%;
   background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+header img {
+  width: 240px;
+  height: 70px;
+}
+header .contactSearch {
+  height: 100px;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--darkBlue);
+}
+.contactSearch p {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  width: 578px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li {
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+nav li a {
+  color: inherit;
+}
+#btnSignUp {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+#btnSignUp:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
 }
