@@ -112,3 +112,13 @@ nav li a {
   border: 2px solid white;
   color: white;
 }
+main {
+  height: 800px;
+  width: 100%;
+  background-color: var(--blue);
+}
+main .background {
+  height: 100%;
+  width: 100%;
+  background-color: var(--yellow);
+}
