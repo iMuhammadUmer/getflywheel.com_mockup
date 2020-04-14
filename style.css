@@ -22,6 +22,9 @@
   font-size: 18px;
   font-weight: 400;
 }
+#italic {
+  font-style: italic;
+}
 button {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -70,7 +73,6 @@ header .contactSearch {
 .contactSearch p {
   font-size: 12px;
   font-weight: 400;
-  font-style: italic;
   margin-left: 10px;
   margin-right: 10px;
   text-decoration: underline;
@@ -115,10 +117,99 @@ nav li a {
 main {
   height: 800px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: var(--blue);
 }
 main .background {
-  height: 100%;
+  height: 70%;
   width: 100%;
-  background-color: var(--yellow);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+}
+.cloudRow1 {
+  height: 145px;
+  width: 100%;
+}
+.cloudRow1 img {
+  height: inherit;
+  width: 245px;
+  margin-left: -4em;
+}
+#cloudAnimation {
+  animation: cloud 3s linear infinite;
+}
+@keyframes cloud {
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+  }
+}
+.cloudRow2 {
+  height: 145px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#cloudSun {
+  height: 200px;
+  width: 480px;
+}
+main .content {
+  height: 800px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
+  position: absolute;
+}
+main h1 {
+  font-size: 50px;
+  line-height: 53px;
+  font-weight: 500;
+  color: white;
+}
+main h3 {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 300;
+  color: var(--darkBlue);
+}
+.signUp {
+  width: 500px;
+  height: 48px;
+  display: flex;
+}
+input {
+  width: 310px;
+  height: 48px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+#btnSignUpForFree {
+  width: 190px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: var(--darkBlue);
+  color: white;
+}
+main p {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--darkBlue);
+}
+main .content img {
+  border-radius: 5px;
+  box-shadow: 0 0 10px silver;
 }
