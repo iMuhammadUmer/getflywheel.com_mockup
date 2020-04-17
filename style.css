@@ -365,7 +365,7 @@ p {
   background-color: var(--darkBlue);
 }
 .hostingExperience {
-  height: 790px;
+  height: 800px;
   width: 85%;
   border-top: 2px solid var(--hr);
   display: flex;
@@ -382,4 +382,34 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.hostingExperience .tourCol {
+  width: 350px;
+  height: 410px;
+}
+.tourCol li {
+  width: 350px;
+  height: 80px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
+  list-style-type: none;
+  background-color: white;
+}
+.tourCol li:hover {
+  color: var(--blue);
+}
+li svg {
+  height: 40px;
+  width: 40px;
+  padding-right: 1em;
+}
+.tourCol li a {
+  display: flex;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+}
+.tourCol li a:hover {
+  color: var(--blue);
 }
