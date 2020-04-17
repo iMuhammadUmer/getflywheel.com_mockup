@@ -272,6 +272,7 @@ p {
   border: 1px solid var(--hr);
   border-radius: 5px;
   transition: 0.3s ease-in-out;
+  overflow: hidden;
 }
 .plansCol:hover {
   box-shadow: 0 0 10px silver;
