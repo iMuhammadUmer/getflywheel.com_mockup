@@ -440,3 +440,8 @@ li svg {
 .helpCol a {
   color: var(--blue);
 }
+.hostingPlans {
+  width: 100%;
+  height: 1000px;
+  background-color: var(--silver);
+}
