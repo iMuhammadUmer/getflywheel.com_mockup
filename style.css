@@ -12,6 +12,9 @@
   --hr: #e7e7e7;
   --seaGreen: #338199;
   --silver: #fafafa;
+  --lightGrey: #5d5e5e;
+  --green: #51bb7b;
+  --darkGreen: #267048;
 }
 .topBar {
   width: 100%;
@@ -452,7 +455,80 @@ li svg {
   width: 85%;
   border-top: 2px solid var(--hr);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
+}
+.hostingPlans .hostingFeatures {
+  height: 596px;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 5px 15px 0 silver;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hostingFeatures .hostingFeaturesCol {
+  height: 450px;
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.hostingFeatures .hostingFeaturesRow {
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.hostingFeaturesRow svg {
+  height: 60px;
+  width: 60px;
+}
+.hostingFeaturesRow .description {
+  width: 280px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.hostingFeaturesRow h3 {
+  font-weight: 500;
+  color: black;
+}
+.hostingFeaturesRow h3 a {
+  color: inherit;
+}
+.hostingFeaturesRow p {
+  width: 300px;
+  height: 66px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: var(--lightGrey);
+  text-align: left;
+}
+#btnSignUpForFree {
+  height: 48px;
+  width: 190px;
+  background-color: var(--green);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: all 0.25s ease-in-out;
+  font-size: 15px;
+  font-weight: 700;
+}
+#btnSignUpForFree:hover {
+  background-color: var(--darkGreen);
+}
+.hostingPlans .signUp {
+  height: 48px;
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hostingPlans .signUp p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--lightGrey);
 }
