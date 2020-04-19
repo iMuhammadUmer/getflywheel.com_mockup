@@ -535,4 +535,51 @@ li svg {
 .testimonials {
   width: 100%;
   height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonials h1,
+p {
+  margin-bottom: 0.5em;
+}
+.testimonials .content {
+  width: 740px;
+  height: 180px;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+.testimonials h4 {
+  width: 478px;
+  height: 90px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--black);
+  text-align: left;
+  margin-top: 2em;
+}
+.testimonials a {
+  color: var(--blue);
+}
+.testimonials .companies {
+  width: 70%;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid var(--hr);
+}
+.companies img {
+  height: 160px;
+  width: 80%;
+  border-radius: 0;
 }
