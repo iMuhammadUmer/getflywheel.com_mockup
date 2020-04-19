@@ -9,6 +9,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js"></script> -->
     <title>
       Flywheel | Managed WordPress Hosting for Designers and Agencies
     </title>
@@ -1788,9 +1789,43 @@
         <!--companies end-->
       </div>
       <!--testimonials end-->
-      <div class="faq"><!--faq start--></div>
+      <div class="faq">
+        <!--faq start-->
+        <h1>FAQ</h1>
+        <p id="italic">As many of the answers as we could compile!</p>
+        <button class="accordion">
+          WHAT DOES MANAGED WORDPRESS HOSTING MEANS?
+        </button>
+        <div class="panel">
+          <p>
+            As a managed WordPress host, Flywheel is going to take care of a
+            bunch of the technical nitty-gritty stuff, so you can get back to
+            doing what you love and growing your business.
+          </p>
+          <p>
+            As a managed WordPress host, Flywheel is going to take care of a
+            bunch of the technical nitty-gritty stuff, so you can get back to
+            doing what you love and growing your business.
+          </p>
+        </div>
+      </div>
       <!--faq end-->
     </section>
     <!--section end-->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
