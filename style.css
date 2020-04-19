@@ -592,11 +592,23 @@ p {
   align-items: center;
   flex-direction: column;
 }
+.faq h1 {
+  margin-bottom: 0.5em;
+}
+.accordianArea {
+  width: 70%;
+  height: 340px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 2em;
+}
 .accordion {
   background-color: white;
   cursor: pointer;
   padding: 18px;
-  width: 70%;
+  width: 100%;
+  height: auto;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -613,7 +625,7 @@ p {
   background-color: white;
 }
 .panel {
-  width: 67%;
+  width: 96.4%;
   padding: 0 18px;
   display: none;
   background-color: white;
@@ -623,8 +635,16 @@ p {
   text-align: left;
   width: 100%;
   font-size: 15px;
-  font-weight: 400;
-  color: var(--black);
+  color: var(--grey);
+}
+.panel a {
+  color: var(--blue);
+  text-decoration: underline;
+  transition: 0.25s ease-in-out;
+  display: inline;
+}
+.panel a:hover {
+  color: var(--darkBlue);
 }
 .accordion:after {
   content: "\02795";
@@ -633,7 +653,19 @@ p {
   float: right;
   margin-left: 5px;
 }
-
 .active:after {
   content: "\2796";
+}
+#btnFaq {
+  width: 354px;
+  height: 43px;
+  background-color: var(--blue);
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  transition: 0.25s ease-in-out;
+  margin-top: 3em;
+}
+#btnFaq:hover {
+  background-color: var(--darkBlue);
 }
