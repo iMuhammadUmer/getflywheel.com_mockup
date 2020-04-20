@@ -689,10 +689,28 @@ p {
 }
 .signUpForFree img {
   height: 520px;
-  width: 600px;
+  width: 650px;
 }
 .socialNav {
   height: 78px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--blue);
+}
+.socialLink {
+  width: 297px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.socialLink svg {
+  height: 40px;
+  width: 40px;
+  fill: var(--darkBlue);
+  transition: 0.25s ease-in-out;
+}
+.socialLink svg:hover {
+  fill: var(--seaGreen);
 }
