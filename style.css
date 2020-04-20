@@ -714,3 +714,7 @@ p {
 .socialLink svg:hover {
   fill: var(--seaGreen);
 }
+footer {
+  height: 610px;
+  width: 100%;
+}
