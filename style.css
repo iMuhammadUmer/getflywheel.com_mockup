@@ -691,3 +691,8 @@ p {
   height: 520px;
   width: 600px;
 }
+.socialNav {
+  height: 78px;
+  width: 100%;
+  background-color: var(--blue);
+}
