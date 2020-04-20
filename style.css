@@ -670,7 +670,24 @@ p {
   background-color: var(--darkBlue);
 }
 .signUpForFree {
-  height: 575px;
+  height: 520px;
   width: 100%;
   background-color: var(--darkBlue);
+  display: flex;
+  align-items: center;
+}
+.signUpForFree .content {
+  width: 630px;
+  height: 187px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.signUpForFree h1 {
+  color: white;
+  font-size: 50px;
+}
+.signUpForFree img {
+  height: 520px;
+  width: 600px;
 }
