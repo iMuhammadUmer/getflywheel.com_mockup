@@ -20,14 +20,15 @@
   width: 100%;
   height: 54px;
   background-color: var(--darkBlue);
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .topBar p {
+  width: 650px;
   font-size: 18px;
   font-weight: 400;
+  color: white;
 }
 #italic {
   font-style: italic;
@@ -78,11 +79,15 @@ header .contactSearch {
   color: var(--darkBlue);
 }
 .contactSearch p {
+  width: auto;
   font-size: 12px;
   font-weight: 400;
   margin-left: 10px;
   margin-right: 10px;
   text-decoration: underline;
+}
+.contactSearch a {
+  color: inherit;
 }
 nav {
   width: 90%;
@@ -165,6 +170,7 @@ main .background {
 #cloudSun {
   height: 200px;
   width: 480px;
+  margin-left: -6em;
 }
 main .content {
   height: 900px;
@@ -207,7 +213,7 @@ input {
   line-height: 14px;
   font-weight: 400;
 }
-#btnSignUpForFree {
+#btnSignUpForFreeMain {
   width: 190px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -511,6 +517,7 @@ li svg {
   height: 48px;
   width: 190px;
   background-color: var(--green);
+  color: white;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   transition: all 0.25s ease-in-out;
@@ -547,7 +554,7 @@ p {
 .testimonials .content {
   width: 740px;
   height: 180px;
-  margin-top: 2em;
+  margin: 2em 0 2em 0;
   display: flex;
   justify-content: space-between;
 }
@@ -717,4 +724,99 @@ p {
 footer {
   height: 610px;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.footerLinksRow {
+  width: 90%;
+  height: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerLinksCol {
+  width: 130px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+}
+footer .hr {
+  width: 100%;
+  border-bottom: 2px solid var(--hr);
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+.footerLinksCol li {
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 1em;
+  color: var(--lightGrey);
+  transition: 0.25s ease-in-out;
+}
+footer li:hover {
+  color: var(--blue);
+}
+footer li a {
+  color: inherit;
+}
+#features {
+  width: 250px;
+}
+#features .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe {
+  height: 50px;
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe input {
+  border: 1px solid var(--hr);
+  outline: var(--blue);
+  width: 217px;
+  height: 52px;
+}
+#btnSubscribe {
+  width: 167px;
+  height: 52px;
+  background-color: var(--darkBlue);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.copyRight {
+  width: 630px;
+  height: 33px;
+  display: flex;
+  justify-content: space-between;
+}
+.copyRight img {
+  height: 40px;
+  width: 40px;
+}
+.copyRight p {
+  height: 40px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #c7c4c4;
+}
+.copyRight ul {
+  height: 40px;
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyRight ul li {
+  font-size: 12px;
+  font-weight: 400;
+  color: #c7c4c4;
 }
